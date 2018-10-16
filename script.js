@@ -133,6 +133,9 @@ function setCurrentTime(){
 
 // Photo Option 
 function photoOption() {
+  // greeting.innerHTML = `What's your interest?`;
+  // photoInterest.style.display = "inline-block";
+  // setName.style.display = "none";
   photoInterest.addEventListener("keyup", function(e){
     console.log(e.target.value);
     if(e.which == 13){
@@ -149,10 +152,10 @@ function photoOption() {
 };
 
 // New Image
-function newImage(keyword) {
-  if(!ACCESS_KEY) {
-    alert("please update your access key");
-    return;
-  }
-  let url = `https://api.unsplash.com/search/photos?query=${keyword}&per_page=20&orientation=landscape&client_id=${ACCESS_KEY}`;
-}
+// function newImage(keyword) {
+//   if(!ACCESS_KEY) {
+//     alert("please update your access key");
+//     return;
+//   }
+//   let url = `https://api.unsplash.com/search/photos?query=${keyword}&per_page=20&orientation=landscape&client_id=${ACCESS_KEY}`;
+// }
